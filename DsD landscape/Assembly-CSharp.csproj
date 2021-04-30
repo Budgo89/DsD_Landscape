@@ -66,9 +66,13 @@
      <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
+     <Compile Include="Assets\Scripts\Arrow\ArrowHit.cs" />
+     <Compile Include="Assets\Scripts\Arrow\MobKill.cs" />
+     <Compile Include="Assets\Scripts\LightSettings\LightSettings.cs" />
      <Compile Include="Assets\Scripts\MainGUI.cs" />
      <Compile Include="Assets\Scripts\MobDie.cs" />
      <Compile Include="Assets\Scripts\MyEnemy.cs" />
+     <Compile Include="Assets\Scripts\Scen2\ArrowShotScen2.cs" />
      <Compile Include="Assets\Scripts\Scen2\MainGUI_Scen2.cs" />
      <Compile Include="Assets\Tom&apos;s Terrain Tools\2DTools\Scripts\Camera2DFollow.cs" />
      <Compile Include="Assets\Tom&apos;s Terrain Tools\2DTools\Scripts\CircleMoverSample.cs" />
@@ -81,6 +85,7 @@
      <None Include="Assets\Samples\Terrain Tools\0.1.0-preview\Terrain Assets\ThirdPartyNotices.txt" />
      <None Include="Assets\Tom&apos;s Terrain Tools\Example Data\Terragen Sources\README.txt" />
      <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
+     <None Include="Assets\3DForge\Blueprints\PremiumBlueprints\PB_VIK_VEK\Sword&amp;ShieldInn\Documentation\PB Sword &amp; Shield Inn user guide.txt" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>D:/Unity/DsD landscape/DsD landscape/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
