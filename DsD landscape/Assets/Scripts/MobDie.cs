@@ -13,15 +13,17 @@ public class MobDie : MonoBehaviour
 
         if (_health <= 0)
         {
-            Invoke("Die",5);
+            DieRoutine();
         }
+    }
+    private IEnumerator DieRoutine()
+    {
+        yield return new WaitForSeconds(5);
+        Die();
     }
 
     private void Die()
     {
         gameObject.SetActive(false);
     }
-
-
-
 }

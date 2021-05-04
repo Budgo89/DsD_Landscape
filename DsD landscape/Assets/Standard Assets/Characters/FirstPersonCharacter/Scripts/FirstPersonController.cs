@@ -27,7 +27,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
         [SerializeField] private float m_StepInterval;
         [SerializeField] private AudioClip[] m_FootstepSounds;    // an array of footstep sounds that will be randomly selected from.
         [SerializeField] private AudioClip m_JumpSound;           // the sound played when character leaves the ground.
-        [SerializeField] private AudioClip m_LandSound;           // the sound played when character touches back on ground.
+        [SerializeField] private AudioClip m_LandSound;  
+        [SerializeField] private Animator _animator;// the sound played when character touches back on ground.
 
         private Camera m_Camera;
         private bool m_Jump;
@@ -99,7 +100,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
             GetInput(out speed);
             // always move along the camera forward as it is the direction that it being aimed at
             Vector3 desiredMove = transform.forward*m_Input.y + transform.right*m_Input.x;
-
+            _animator.SetFloat("Speed",desiredMove.magnitude*speed);
+            _animator.SetFloat("Direction",transform.right.magnitude*m_Input.x*speed);
             // get a normal for the surface that is being touched to move along it
             RaycastHit hitInfo;
             Physics.SphereCast(transform.position, m_CharacterController.radius, Vector3.down, out hitInfo,
@@ -120,6 +122,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                     PlayJumpSound();
                     m_Jump = false;
                     m_Jumping = true;
+                    _animator.SetTrigger("Jump");
                 }
             }
             else
