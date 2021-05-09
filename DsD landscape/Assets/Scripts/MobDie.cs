@@ -13,7 +13,7 @@ public class MobDie : MonoBehaviour
 
         if (_health <= 0)
         {
-            DieRoutine();
+            StartCoroutine("DieRoutine");
         }
     }
     private IEnumerator DieRoutine()
