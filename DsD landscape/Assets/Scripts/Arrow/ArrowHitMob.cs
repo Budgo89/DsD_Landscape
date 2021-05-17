@@ -5,15 +5,19 @@ using UnityEngine;
 public class ArrowHitMob : MonoBehaviour
 {
     [SerializeField]
-    public int _damage;
-
-    public void OnTriggerEnter(Collider other)
+    private int _damage;
+    
+    private void OnTriggerEnter(Collider other)
     {
         var enemy = other.GetComponent<MyEnemy>();
+
         if (enemy != null)
         {
             enemy.Hurt(_damage);
+            enemy.Vignettes(0.5f);
             gameObject.SetActive(false);
+
         }
     }
+
 }

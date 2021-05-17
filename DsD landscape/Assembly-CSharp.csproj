@@ -66,6 +66,7 @@
      <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
+     <Compile Include="Assets\Scenes\SampleScene_Profiles\PostProcessContr.cs" />
      <Compile Include="Assets\Scripts\Animator Brute\AnimatorBrute.cs" />
      <Compile Include="Assets\Scripts\Animftor Player\IKControl.cs" />
      <Compile Include="Assets\Scripts\Arrow\ArrowHit.cs" />
@@ -75,6 +76,7 @@
      <Compile Include="Assets\Scripts\Arrow\ArrowHitPlayer.cs" />
      <Compile Include="Assets\Scripts\Arrow\BoomArrow.cs" />
      <Compile Include="Assets\Scripts\Arrow\MobKill.cs" />
+     <Compile Include="Assets\Scripts\ColorGradingTrigger\ColorGradingTrigger.cs" />
      <Compile Include="Assets\Scripts\Dialogue\ArrowDialogue.cs" />
      <Compile Include="Assets\Scripts\Dialogue\DialogueIntroduction.cs" />
      <Compile Include="Assets\Scripts\Dialogue\KnightKillDialogue.cs" />
@@ -143,20 +145,20 @@
  <Reference Include="Unity.CollabProxy.Editor">
  <HintPath>D:/Unity/DsD landscape/DsD landscape/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.Postprocessing.Editor">
+ <HintPath>D:/Unity/DsD landscape/DsD landscape/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.Rider.Editor">
  <HintPath>D:/Unity/DsD landscape/DsD landscape/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Postprocessing.Runtime">
+ <HintPath>D:/Unity/DsD landscape/DsD landscape/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
  <HintPath>D:/Unity/DsD landscape/DsD landscape/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>D:/Unity/DsD landscape/DsD landscape/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Postprocessing.Editor">
- <HintPath>D:/Unity/DsD landscape/DsD landscape/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Postprocessing.Runtime">
- <HintPath>D:/Unity/DsD landscape/DsD landscape/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>D:/Program Files/2019.4.21f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
